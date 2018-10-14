@@ -16,7 +16,7 @@
           Name <input
           id="name"
           type="text"
-          placeholder="Fullname"
+          placeholder="Full name"
           required
           >
         </label>
@@ -41,9 +41,9 @@
           >
         </label>
 
-        <label id="occupation-label">Occupation
-          <select id="dropdown" name="occupation">
-            <option value="select an option">Select an option</option>
+        <label id="occupation-label" for="occupation">Occupation
+          <select id="dropdown occupation-dropdown" name="occupation">
+            <option value="select an option" selected disabled>Select an option</option>
             <option value="full-time employed">Full-time Employed</option>
             <option value="part-time employed">Part-time Employed</option>
             <option value="full-time self-employed">Full-time Self-employed</option>
@@ -53,7 +53,28 @@
           </select>
         </label>
 
-        <input type="submit">
+        <label id="recommendation-label" for="recommendation">How likely are you to recommend freeCodeCamp?
+            <input type="radio" name="recommendation" value="most definietly">Most Definietly
+            <input type="radio" name="recommendation" value="maybe">Maybe
+            <input type="radio" name="recommendation" value="not sure">Not Sure
+        </label>
+
+        <label id="fav-label" for="likes">What do you like most about freeCodeCamp?
+          <select id="dropdown fav-dropdown" name="fav">
+            <option value="select an option" selected disabled>Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="open source">Open source</option>
+            <option value="content">Lesson content</option>
+          </select>
+        </label>
+
+        <label id="comments-label" for="comments">
+          <input id="comments" type="textarea" name="comments" value="Enter your comment here">
+        </label>
+
+        <input type="submit" name="submit" value="Submit">
       </form>
     </main>
   </body>
