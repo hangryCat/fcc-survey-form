@@ -9,5 +9,24 @@
       <h1 id="title">Survey Form</h1>
       <p id="descriptioh">How can freeCodeCamp be improved?</p>
     </header>
+
+    <main role="main">
+      <form id="survey-form" action="index.html" method="GET">
+        <label for="name">
+          Name:
+          <input id="name" type="text" placeholder="Enter your name" required>
+        </label>
+
+        <label for="age">
+          Age:
+          <input id="age" type="number" placeholder="Enter your age" required>
+        </label>
+
+        <label for="email">
+          Email:
+          <input id="email" type="email" placeholder="Enter your email address"pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+        </label>
+      </form>
+    </main>
   </body>
 </html>
