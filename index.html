@@ -24,7 +24,7 @@
             >
           </label>
 
-          <label id="number-label" for="age">
+          <label id="number-label" for="number">
             Age <input
             id="number"
             class="contact-input"
@@ -47,25 +47,61 @@
           </label>
         </div>
 
-        <label id="occupation-label" for="occupation">Occupation
-          <select id="dropdown occupation-dropdown" name="occupation">
-            <option value="select an option" selected disabled>Select an option</option>
-            <option value="full-time employed">Full-time Employed</option>
-            <option value="part-time employed">Part-time Employed</option>
-            <option value="full-time self-employed">Full-time Self-employed</option>
-            <option value="part-time self-employed">Part-time Self-employed</option>
-            <option value="student">Student</option>
-            <option value="other">Other</option>
+        <section id="occupation">
+          <legend>What's Your Occupation?</legend>
+          <select id="dropdown" name="occupation">
+            <label for="select an option" name="select an option">
+              <option value="select an option" selected disabled>Select an option</option>
+            </label>
+
+            <label for="" name="">
+              <option value="full-time employed">Full-time Employed</option>
+            </label>
+
+            <label for="" name="">
+              <option value="part-time employed">Part-time Employed</option>
+            </label>
+
+            <label for="full-time self-employed" name="full-time self-employed">
+              <option value="full-time self-employed">Full-time Self-employed</option>
+            </label>
+
+            <label for="part-time self-employed" name="part-time self-employed">
+              <option value="part-time self-employed">Part-time Self-employed</option>
+            </label>
+
+            <label for="" name="">
+              <option value="student">Student</option>
+            </label>
+
+            <label for="" name="">
+              <option value="other">Other</option>
+            </label>
           </select>
-        </label>
+        </section>
 
-        <label id="recommendation-label" for="recommendation">How likely are you to recommend freeCodeCamp?
-            <input type="radio" name="recommendation" value="most definietly">Most Definietly
-            <input type="radio" name="recommendation" value="maybe">Maybe
-            <input type="radio" name="recommendation" value="not sure">Not Sure
-        </label>
+        <fieldset id="recommendation">
+            <legend>How likely are you to recommend freeCodeCamp?</legend>
 
-        <label id="fav-label" for="likes">What do you like most about freeCodeCamp?
+            <label for="most definietly">
+              <input type="radio" name="recommendation" value="most definietly">Most Definietly
+            </label>
+
+            <label for="maybe">
+              <input type="radio" name="recommendation" value="maybe">Maybe
+            </label>
+
+            <label for="not sure">
+              <input type="radio" name="recommendation" value="not sure">Not Sure
+            </label>
+
+            <label for="no way">
+              <input type="radio" name="recommendation" value="not sure">No Way
+            </label>
+        </fieldset>
+
+        <div id="favorite">
+          <legend>What do you like most about freeCodeCamp?</legend>
           <select id="dropdown fav-dropdown" name="fav">
             <option value="select an option" selected disabled>Select an option</option>
             <option value="challenges">Challenges</option>
@@ -74,20 +110,30 @@
             <option value="open source">Open source</option>
             <option value="content">Lesson content</option>
           </select>
-        </label>
+        </div>
 
-        <label for="improve">What should improve? (Check all that apply)
-          <p><input type="checkbox" name="improve" value="front-end projects">Front-end Projects</p>
-          <p><input type="checkbox" name="improve" value="back-end projects">Back-end Projects</p>
-          <p><input type="checkbox" name="improve" value="data visualization">Data Visualization</p>
-          <p><input type="checkbox" name="improve" value="challenges">Challenges</p>
-          <p><input type="checkbox" name="improve" value="open source community">Open Source Community</p>
-          <p><input type="checkbox" name="improve" value="gitter help rooms">Gitter Help Rooms</p>
-          <p><input type="checkbox" name="improve" value="videos">Videos</p>
-          <p><input type="checkbox" name="improve" value="city meetups">City Meetups</p>
-          <p><input type="checkbox" name="improve" value="forum">Forum</p>
-          <p><input type="checkbox" name="improve" value="additional courses">Additional Courses</p>
-        </label>
+        <section id="improve">
+          <legend>What should improve? (Check all that apply)</legend>
+          <label for="front-end projects"><input type="checkbox" name="improve" value="front-end projects">Front-end Projects</label>
+
+          <label for="back-end projects"><input type="checkbox" name="improve" value="back-end projects">Back-end Projects</label>
+
+          <label for="data visualization"><input type="checkbox" name="improve" value="data visualization">Data Visualization</label>
+
+          <label for="challenges"><input type="checkbox" name="improve" value="challenges">Challenges</label>
+
+          <label for="open source community"><input type="checkbox" name="improve" value="open source community">Open Source Community</label>
+
+          <label for="gitter help room"><input type="checkbox" name="improve" value="gitter help rooms">Gitter Help Rooms</label>
+
+          <label for="videos"><input type="checkbox" name="improve" value="videos">Videos</label>
+
+          <label for="city meetups"><input type="checkbox" name="improve" value="city meetups">City Meetups</label>
+
+          <label for="forum"><input type="checkbox" name="improve" value="forum">Forum</label>
+
+          <label for="additional courses"><input type="checkbox" name="improve" value="additional courses">Additional Courses</label>
+        </section>
 
         <label id="comments-label" for="comments"> Any comments or suggestions?
           <textarea  id="comments" placeholder="Enter your comment here..." rows="6" cols="40"></textarea>

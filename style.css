@@ -41,6 +41,35 @@ input.contact-input {
 padding: 2px;
 }
 
+section#occupation, div#favorite {
+  display: flex;
+}
+
+section#occupation > *, div#favorite > * {
+  margin-right: 15px;
+}
+
+section#improve {
+  display: flex;
+  flex-direction: column;
+}
+
+section#improve > * {
+  margin: 3px 0;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset * {
+  margin-bottom: 5px;
+}
+
+select#dropdown {
+  display: flex;
+}
+
 label#comments-label {
   display: flex;
   flex-direction: column;
@@ -57,4 +86,5 @@ input[type="submit"] {
   background-color:  #28a428;
   color: white;
   border: none;
+  letter-spacing: 1px;
 }
