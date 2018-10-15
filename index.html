@@ -8,39 +8,44 @@
   <body>
     <header>
       <h1 id="title">Survey Form</h1>
-      <p id="descriptioh">How can freeCodeCamp be improved?</p>
+      <p id="description">How can freeCodeCamp be improved?</p>
     </header>
 
     <main role="main">
       <form id="survey-form" action="index.html" method="GET">
-        <label id="name-label" for="name">
-          Name <input
-          id="name"
-          type="text"
-          placeholder="Full name"
-          required
-          >
-        </label>
+        <div class="contact-information">
+          <label id="name-label" for="name">
+            Name <input
+            id="name"
+            class="contact-input"
+            type="text"
+            placeholder="Full name"
+            required
+            >
+          </label>
 
-        <label id="number-label" for="age">
-          Age <input
-          id="number"
-          type="number"
-          placeholder="Age"
-          min="1"
-          max="110"
-          required
-          >
-        </label>
+          <label id="number-label" for="age">
+            Age <input
+            id="number"
+            class="contact-input"
+            type="number"
+            placeholder="Age"
+            min="1"
+            max="110"
+            required
+            >
+          </label>
 
-        <label id="email-label" for="email">
-          Email <input
-          id="email"
-          type="email"
-          placeholder="Email address"
-          required
-          >
-        </label>
+          <label id="email-label" for="email">
+            Email <input
+            id="email"
+            class="contact-input"
+            type="email"
+            placeholder="Email address"
+            required
+            >
+          </label>
+        </div>
 
         <label id="occupation-label" for="occupation">Occupation
           <select id="dropdown occupation-dropdown" name="occupation">
@@ -85,7 +90,7 @@
         </label>
 
         <label id="comments-label" for="comments"> Any comments or suggestions?
-          <input id="comments" type="textarea" name="comments" value="Enter your comment here">
+          <textarea  id="comments" placeholder="Enter your comment here..." rows="6" cols="40"></textarea>
         </label>
 
         <input type="submit" name="submit" value="Submit">
